@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Registro</title>
+        <link rel="stylesheet" href="estilocontacto.css">
+        
+      </head>
+      <body>
+        <header>
+          <nav><table><tr><td><img  src="iconoestesi.png" width="210" height="210"></td>
+           <td><h1 >Formulario de Registro Travel's DB</h1></td><td><p style=" color: #020e2e">_________________________________________________________________</p></td><td><h3><a href="index.html" style="text-decoration: none; color: white;">🏠 Inicio</a></h3></td></tr></table> 
+          </nav>
+        </header>
+        <main>
+          
+  
+          <h3>¡Por medio de este formulario en la caja de mensaje puedes dejarnos cualquier solicitud que quieras realizar con nosotros!, Asi como:</h3>
+          <ul>
+            <li>Adquirir algun paquete de viaje.</li>
+           <li>Reserva de Tiquetes de alguna Aereolinea aliada.</li>
+           <li>Preguntas a cerca de Nuestros paquetes turisticos.</li>
+           <li>Preguntas a cerca de cualquier duda de turismo y destinos.</li>
+           </ul>
+           <h3>Recuerda que tu solicitud sera respondida lo mas pronto posible por medio del correo electronico que registres.</h3>
+          <form id="formularioRegistro">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+      
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" name="correo" id="correo" required>
+      
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" required></textarea>
+      
+            <button type="submit">Enviar</button>
+          </form>
+          <p id="confirmacion" > ¡Formulario enviado con éxito, Gracias por confiar en Travel's DB!</p>
+          
+        </main>
+        <script>
+            const formulario = document.getElementById("formularioRegistro");
+            const confirmacion = document.getElementById("confirmacion");
+          
+            formulario.addEventListener("submit", function(event) {
+              event.preventDefault(); // Detiene el comportamiento normal del formulario
+          
+              const datos = new FormData(formulario); // Captura los datos del formulario
+          
+              // Envío de los datos con fetch
+              fetch("https://formspree.io/f/xeoggapo", {
+                method: "POST",
+                body: datos,
+                headers: {
+                  'Accept': 'application/json'
+                }
+              })
+              .then(response => {
+                if (response.ok) {
+                  formulario.reset(); // Limpia los campos
+                  confirmacion.style.display = "block"; // Muestra mensaje de éxito
+                } else {
+                  alert("Ocurrió un error al enviar el formulario.");
+                }
+              })
+              .catch(error => {
+                console.error("Error:", error);
+                alert("Ocurrió un error al enviar el formulario.");
+              });
+            });
+          </script>
+          
+      </body>
+</html>

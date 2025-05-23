@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel's DB</title>
+  <link rel="stylesheet" href="estilos_medicamentos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="slogan">
+      <h1>Tu lugar de destino, a un click</h1>
+    </div>
+  </header>
+  <h1>Destinos del mundo</h1>
+<div style="text-align: center; margin-bottom: 20px;">
+  <button id="toggle-todos">Mostrar/Ocultar Todos</button>
+  <input type="text" id="buscador" placeholder="Buscar destino...." style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+</div>
+
+  <div class="grid">
+   <!-- Ejemplo para cada tipo, todos siguen esta estructura -->
+    <div class="card">
+      <h2>America del norte</h2>
+      <p class="resumen">América del Norte se distingue por su alto desarrollo económico, diversidad cultural y liderazgo en tecnología e innovación</p>
+      <div class="details fondo-norte">
+
+<h3>Estados Unidos</h3>
+<ul>
+  <li>Estatua de la Libertad – Nueva York</li>
+  <li>Gran Cañón – Arizona</li>
+  <li>Parque Nacional Yellowstone – Wyoming</li>
+  <li>Disney World – Florida</li>
+  <li>Puente Golden Gate – San Francisco</li>
+</ul>
+
+<h3>Canadá</h3>
+<ul>
+  <li>Cataratas del Niágara</li>
+  <li>Parque Nacional Banff – Alberta</li>
+  <li>Toronto CN Tower</li>
+  <li>Viejo Quebec</li>
+  <li>Auroras boreales en Yukón</li>
+</ul>
+
+<h3>México</h3>
+<ul>
+  <li>Chichén Itzá – Yucatán</li>
+  <li>Teotihuacán – Estado de México</li>
+  <li>Playa del Carmen y Cancún</li>
+  <li>Centro histórico de Ciudad de México</li>
+  <li>Cenotes de la Riviera Maya</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Repite el mismo patrón para cada tarjeta -->
+    <div class="card">
+      <h2>America central</h2>
+      <p class="resumen">América Central destaca por su rica biodiversidad, herencia cultural mesoamericana y su ubicación estratégica entre dos océanos.</p>
+      <div class="details fondo-centro">
+       
+<h3>Costa Rica</h3>
+<ul>
+  <li>Parque Nacional Manuel Antonio</li>
+  <li>Volcán Arenal</li>
+  <li>Monteverde – Bosque nuboso</li>
+  <li>Playas de Guanacaste</li>
+  <li>Reserva Biológica La Fortuna</li>
+</ul>
+
+<h3>Panamá</h3>
+<ul>
+  <li>Canal de Panamá</li>
+  <li>Casco Antiguo de Ciudad de Panamá</li>
+  <li>Islas de San Blas</li>
+  <li>Parque Nacional Coiba</li>
+  <li>Cerro Ancón</li>
+</ul>
+
+<h3>Guatemala</h3>
+<ul>
+  <li>Ruinas de Tikal</li>
+  <li>Antigua Guatemala</li>
+  <li>Lago Atitlán</li>
+  <li>Volcán Pacaya</li>
+  <li>Mercado de Chichicastenango</li>
+</ul>
+
+        </ul>
+      </div>
+    </div>
+<div class="card">
+  <h2>America del sur</h2>
+  <p class="resumen">América del Sur se caracteriza por su vasto patrimonio natural, diversidad étnica y una historia marcada por civilizaciones ancestrales y procesos de independencia.</p>
+  <div class="details fondo-sur">
+   <ul>
+  <h3>Brasil</h3>
+  <ul>
+
+  <li>Cristo Redentor – Río de Janeiro</li>
+  <li>Playa de Copacabana</li>
+  <li>Cataratas del Iguazú</li>
+  <li>Amazonas brasileño</li>
+  <li>Pan de Azúcar</li>
+</ul>
+
+<h3>Argentina</h3>
+<ul>
+  <li>Glaciar Perito Moreno</li>
+  <li>Cataratas del Iguazú</li>
+  <li>Barrio La Boca – Buenos Aires</li>
+  <li>Patagonia</li>
+  <li>Viñedos de Mendoza</li>
+</ul>
+
+<h3>Perú</h3>
+<ul>
+  <li>Machu Picchu</li>
+  <li>Cuzco y Valle Sagrado</li>
+  <li>Líneas de Nazca</li>
+  <li>Lago Titicaca</li>
+  <li>Arequipa y el Cañón del Colca</li>
+</ul>
+
+<h3>Colombia</h3>
+<ul>
+  <li>Cartagena de Indias – Ciudad amurallada</li>
+  <li>Parque Nacional Tayrona</li>
+  <li>Eje cafetero y Salento</li>
+  <li>Medellín – Comuna 13 y Metrocable</li>
+  <li>Islas del Rosario y San Andrés</li>
+</ul>
+
+<h3>Chile</h3>
+<ul>
+  <li>Desierto de Atacama</li>
+  <li>Torres del Paine – Patagonia chilena</li>
+  <li>Isla de Pascua</li>
+  <li>Valparaíso y Viña del Mar</li>
+  <li>Lagos y volcanes en la Región de Los Lagos</li>
+</ul>
+    </ul>
+  </div>
+</div>
+<div class="card">
+  <h2>Africa</h2>
+  <p class="resumen">África es un continente rico en recursos naturales, diversidad cultural y cuna de la humanidad con una historia milenaria.</p>
+  <div class="details fondo-africa">
+<h3>Marruecos</h3>
+<ul>
+  <li>Marrakech – Plaza Jemaa el-Fna y zocos</li>
+  <li>Fez – Medina y Universidad de Al Qarawiyyin</li>
+  <li>Desierto del Sahara – Excursiones en camello</li>
+  <li>Chefchaouen – La ciudad azul</li>
+  <li>Ruinas de Volubilis – Sitio arqueológico romano</li>
+</ul>
+
+<h3>Egipto</h3>
+<ul>
+  <li>Pirámides de Giza y la Esfinge</li>
+  <li>Templo de Karnak</li>
+  <li>Valle de los Reyes</li>
+  <li>Museo Egipcio de El Cairo</li>
+  <li>Crucero por el Nilo</li>
+</ul>
+
+<h3>Sudáfrica</h3>
+<ul>
+  <li>Table Mountain en Ciudad del Cabo</li>
+  <li>Parque Nacional Kruger</li>
+  <li>Ruta Jardín</li>
+  <li>Robben Island</li>
+  <li>Viñedos de Stellenbosch</li>
+</ul>
+
+    </ul>
+  </div>
+</div>
+<div class="card">
+  <h2>Asia</h2>
+  <p class="resumen">Asia es el continente más extenso y poblado del mundo, conocido por su gran variedad de culturas, religiones y economías emergentes.</p>
+  <div class="details fondo-asia">
+<h3>China</h3>
+<ul>
+  <li>Gran Muralla China</li>
+  <li>Ciudad Prohibida en Pekín</li>
+  <li>Ejército de Terracota en Xi'an</li>
+  <li>Río Li y montañas de Guilin</li>
+  <li>Montañas Amarillas (Huangshan)</li>
+</ul>
+
+<h3>Japón</h3>
+<ul>
+  <li>Monte Fuji</li>
+  <li>Kinkaku-ji y Fushimi Inari en Kioto</li>
+  <li>Ruta Nakasendo</li>
+  <li>Onsen (baños termales)</li>
+  <li>Festival Setouchi Triennale</li>
+</ul>
+
+<h3>Tailandia</h3>
+<ul>
+  <li>Gran Palacio de Bangkok</li>
+  <li>Templo Wat Pho</li>
+  <li>Playas de Ao Nang y Railay</li>
+  <li>Parque Nacional Erawan</li>
+  <li>Mercados flotantes</li>
+    </ul>
+  </div>
+</div>
+<div class="card">
+  <h2>Europa</h2>
+  <p class="resumen">Europa se caracteriza por su influencia histórica en el mundo occidental, su desarrollo económico y su legado artístico y filosófico.</p>
+  <div class="details fondo-europa">
+<h3>Francia</h3>
+<ul>
+  <li>Torre Eiffel</li>
+  <li>Museo del Louvre</li>
+  <li>Palacio de Versalles</li>
+  <li>Castillo de Chenonceau</li>
+  <li>Región de la Provenza</li>
+</ul>
+
+<h3>España</h3>
+<ul>
+  <li>Sagrada Familia en Barcelona</li>
+  <li>Alhambra de Granada</li>
+  <li>Museo del Prado en Madrid</li>
+  <li>Catedral de Santiago de Compostela</li>
+  <li>Playas de la Costa del Sol</li>
+</ul>
+
+<h3>Italia</h3>
+<ul>
+  <li>Coliseo de Roma</li>
+  <li>Canales de Venecia</li>
+  <li>Catedral de Florencia (Duomo)</li>
+  <li>Costa Amalfitana</li>
+  <li>Vaticano – Capilla Sixtina y Basílica de San Pedro</li>
+    </ul>
+  </div>
+</div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p><strong>Contacto:</strong> TravelsDBContac@gmail.com</p>
+      <p>© 2025 Todos los derechos reservados</p>
+     <h3><a href="index.html">INICIO</a></h3>
+    </div>
+  </footer>
+
+  <!-- ⚠️ Asegúrate que este archivo exista -->
+  <script src="funciones_medicamentos.js"></script>
+</body>
+</html>

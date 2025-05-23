@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(130, 209, 219);
+    background-image: url('fondo2.png');
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #020e2e;
+    background-image: url('fon.png');
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+ 
+  #formularioRegistro {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#formularioRegistro label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #0a74da;
+}
+
+#formularioRegistro input,
+#formularioRegistro textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+#formularioRegistro input:focus,
+#formularioRegistro textarea:focus {
+  border-color: #0a74da;
+  outline: none;
+  box-shadow: 0 0 8px rgba(10, 116, 218, 0.3);
+}
+
+#formularioRegistro textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#formularioRegistro button {
+  background-color: #0a74da;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#formularioRegistro button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+#confirmacion {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  h1 {
+    
+    color: blanchedalmond;
+
+  }
